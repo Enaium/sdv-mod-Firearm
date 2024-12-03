@@ -5,7 +5,7 @@ using StardewValley.GameData.Weapons;
 using StardewValley.ItemTypeDefinitions;
 using StardewValley.Tools;
 
-namespace Gun.Framework.Patches;
+namespace Firearm.Framework.Patches;
 
 public class WeaponDataDefinitionPatches
 {
@@ -13,8 +13,8 @@ public class WeaponDataDefinitionPatches
     {
         __result = data.ItemId switch
         {
-            Gun.Ak47Id => new Gun(Gun.Ak47Id),
-            Gun.M16Id => new Gun(Gun.M16Id),
+            Firearm.Ak47Id => new Firearm(Firearm.Ak47Id),
+            Firearm.M16Id => new Firearm(Firearm.M16Id),
             _ => __result
         };
     }

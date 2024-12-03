@@ -5,13 +5,12 @@ using Microsoft.Xna.Framework.Input;
 using Netcode;
 using StardewValley;
 using StardewValley.Projectiles;
-using StardewValley.Tools;
 using Object = StardewValley.Object;
 
-namespace Gun.Framework;
+namespace Firearm.Framework;
 
-[XmlType("Mods_Enaium_Gun")]
-public sealed class Gun : Tool
+[XmlType("Mods_Enaium_Firearm")]
+public sealed class Firearm : Tool
 {
     [XmlIgnore]
     private bool _using;
@@ -25,16 +24,16 @@ public sealed class Gun : Tool
     [XmlIgnore]
     private double _lastFireTime;
 
-    public const string Ak47Id = "Gun_AK47";
-    public const string M16Id = "Gun_M16";
-    public const string AmmoAssaultRifleId = "Gun_Ammo_Assault_Rifle";
+    public const string Ak47Id = "Firearm_AK47";
+    public const string M16Id = "Firearm_M16";
+    public const string AmmoAssaultRifleId = "Firearm_Ammo_Assault_Rifle";
 
 
-    public Gun() : this(Ak47Id)
+    public Firearm() : this(Ak47Id)
     {
     }
 
-    public Gun(string id)
+    public Firearm(string id)
     {
         id = ValidateUnqualifiedItemId(id);
         var dataOrErrorItem = ItemRegistry.GetDataOrErrorItem("(W)" + itemId);
@@ -335,7 +334,7 @@ public sealed class Gun : Tool
 
     protected override Item GetOneNew()
     {
-        return new Gun(ItemId);
+        return new Firearm(ItemId);
     }
 
     protected override string loadDisplayName()

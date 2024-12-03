@@ -1,12 +1,12 @@
 ﻿using StardewValley;
 
-namespace Gun.Framework.Patches;
+namespace Firearm.Framework.Patches;
 
 public class Game1Patches
 {
     internal static bool DrawTool(Farmer f)
     {
-        if (f.CurrentTool is not Gun)
+        if (f.CurrentTool is not Firearm)
             return true;
 
         f.CurrentTool.draw(Game1.spriteBatch);

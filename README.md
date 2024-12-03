@@ -1,16 +1,16 @@
-﻿# Gun
+﻿# Firearm
 
-Guns for Stardew Valley.
+Firearms for Stardew Valley.
 
 ## Install
 
 1. [Install the latest version of SMAPI](https://smapi.io/).
-2. Install [this mod](https://www.curseforge.com/stardewvalley/mods/gun).
+2. Install [this mod](https://www.curseforge.com/stardewvalley/mods/firearm).
 4. Run the game using SMAPI.
 
 ## Config
 
-If you want to easily change the gun's damage, speed, and price etc.
+If you want to easily change the firearm's damage, speed, and price etc.
 You can install the [ConfigUI](https://www.curseforge.com/stardewvalley/mods/configui) mod.
 
 ```json

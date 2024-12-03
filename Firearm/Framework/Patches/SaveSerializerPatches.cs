@@ -2,11 +2,11 @@
 using StardewValley;
 using StardewValley.Inventories;
 
-namespace Gun.Framework.Patches;
+namespace Firearm.Framework.Patches;
 
 public class SaveSerializerPatches {
     
-    private static readonly XmlSerializer ItemSerializer = new(typeof(Item),new []{typeof(Gun)});
+    private static readonly XmlSerializer ItemSerializer = new(typeof(Item),new []{typeof(Firearm)});
     
     internal static bool GetSerializer(ref XmlSerializer __result,Type type)
     {

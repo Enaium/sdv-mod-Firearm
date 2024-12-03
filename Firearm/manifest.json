@@ -1,10 +1,10 @@
 ﻿{
-  "Name": "Gun",
+  "Name": "Firearm",
   "Author": "Enaium",
   "Version": "1.0.0",
-  "Description": "Guns for Stardew Valley",
-  "UniqueID": "Enaium.Gun",
-  "EntryDll": "Gun.dll",
+  "Description": "Firearms for Stardew Valley",
+  "UniqueID": "Enaium.Firearm",
+  "EntryDll": "Firearm.dll",
   "MinimumApiVersion": "4.0.0",
   "UpdateKeys": [
     "CurseForge:1152742"

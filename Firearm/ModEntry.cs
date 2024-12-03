@@ -1,5 +1,5 @@
-﻿using Gun.Framework;
-using Gun.Framework.Patches;
+﻿using Firearm.Framework;
+using Firearm.Framework.Patches;
 using HarmonyLib;
 using Microsoft.Xna.Framework.Graphics;
 using StardewModdingAPI;
@@ -12,7 +12,7 @@ using StardewValley.ItemTypeDefinitions;
 using StardewValley.Menus;
 using StardewValley.SaveSerialization;
 
-namespace Gun;
+namespace Firearm;
 
 public class ModEntry : Mod
 {
@@ -56,21 +56,21 @@ public class ModEntry : Mod
             e.Edit(assets =>
             {
                 var dict = assets.AsDictionary<string, WeaponData>();
-                dict.Data[Framework.Gun.Ak47Id] = new WeaponData
+                dict.Data[Framework.Firearm.Ak47Id] = new WeaponData
                 {
-                    Name = Framework.Gun.Ak47Id,
-                    DisplayName = "[LocalizedText Strings\\Gun:Gun.Weapon.Ak47.DisplayName]",
-                    Description = "[LocalizedText Strings\\Gun:Gun.Weapon.Ak47.Description]",
+                    Name = Framework.Firearm.Ak47Id,
+                    DisplayName = "[LocalizedText Strings\\Firearm:Firearm.Weapon.Ak47.DisplayName]",
+                    Description = "[LocalizedText Strings\\Firearm:Firearm.Weapon.Ak47.Description]",
                     CanBeLostOnDeath = false,
-                    Texture = Framework.Gun.Ak47Id
+                    Texture = Framework.Firearm.Ak47Id
                 };
-                dict.Data[Framework.Gun.M16Id] = new WeaponData
+                dict.Data[Framework.Firearm.M16Id] = new WeaponData
                 {
-                    Name = Framework.Gun.M16Id,
-                    DisplayName = "[LocalizedText Strings\\Gun:Gun.Weapon.M16.DisplayName]",
-                    Description = "[LocalizedText Strings\\Gun:Gun.Weapon.M16.Description]",
+                    Name = Framework.Firearm.M16Id,
+                    DisplayName = "[LocalizedText Strings\\Firearm:Firearm.Weapon.M16.DisplayName]",
+                    Description = "[LocalizedText Strings\\Firearm:Firearm.Weapon.M16.Description]",
                     CanBeLostOnDeath = false,
-                    Texture = Framework.Gun.M16Id
+                    Texture = Framework.Firearm.M16Id
                 };
             });
         }
@@ -79,12 +79,12 @@ public class ModEntry : Mod
             e.Edit(assets =>
             {
                 var dict = assets.AsDictionary<string, ObjectData>();
-                dict.Data[Framework.Gun.AmmoAssaultRifleId] = new ObjectData
+                dict.Data[Framework.Firearm.AmmoAssaultRifleId] = new ObjectData
                 {
-                    Name = Framework.Gun.AmmoAssaultRifleId,
-                    DisplayName = "[LocalizedText Strings\\Gun:Gun.Object.AssaultRifleAmmo.DisplayName]",
-                    Description = "[LocalizedText Strings\\Gun:Gun.Object.AssaultRifleAmmo.Description]",
-                    Texture = "Gun_Ammo"
+                    Name = Framework.Firearm.AmmoAssaultRifleId,
+                    DisplayName = "[LocalizedText Strings\\Firearm:Firearm.Object.AssaultRifleAmmo.DisplayName]",
+                    Description = "[LocalizedText Strings\\Firearm:Firearm.Object.AssaultRifleAmmo.Description]",
+                    Texture = "Firearm_Ammo"
                 };
             });
         }
@@ -93,25 +93,25 @@ public class ModEntry : Mod
             e.Edit(assets =>
             {
                 var dict = assets.AsDictionary<string, string>();
-                dict.Data[Framework.Gun.Ak47Id] = $"335 20/Field/{Framework.Gun.Ak47Id}/false/default/";
-                dict.Data[Framework.Gun.M16Id] = $"335 20/Field/{Framework.Gun.M16Id}/false/default/";
-                dict.Data[Framework.Gun.AmmoAssaultRifleId] =
-                    $"382 1 378 1/Field/{Framework.Gun.AmmoAssaultRifleId}/false/default/";
+                dict.Data[Framework.Firearm.Ak47Id] = $"335 20/Field/{Framework.Firearm.Ak47Id}/false/default/";
+                dict.Data[Framework.Firearm.M16Id] = $"335 20/Field/{Framework.Firearm.M16Id}/false/default/";
+                dict.Data[Framework.Firearm.AmmoAssaultRifleId] =
+                    $"382 1 378 1/Field/{Framework.Firearm.AmmoAssaultRifleId}/false/default/";
             });
         }
-        else if (e.Name.IsEquivalentTo(Framework.Gun.Ak47Id))
+        else if (e.Name.IsEquivalentTo(Framework.Firearm.Ak47Id))
         {
             e.LoadFromModFile<Texture2D>("assets/assault_rifle/ak47.png", AssetLoadPriority.Medium);
         }
-        else if (e.Name.IsEquivalentTo(Framework.Gun.M16Id))
+        else if (e.Name.IsEquivalentTo(Framework.Firearm.M16Id))
         {
             e.LoadFromModFile<Texture2D>("assets/assault_rifle/m16.png", AssetLoadPriority.Medium);
         }
-        else if (e.Name.IsEquivalentTo("Gun_Ammo"))
+        else if (e.Name.IsEquivalentTo("Firearm_Ammo"))
         {
             e.LoadFromModFile<Texture2D>("assets/ammo.png", AssetLoadPriority.Medium);
         }
-        else if (e.Name.IsEquivalentTo("Strings/Gun"))
+        else if (e.Name.IsEquivalentTo("Strings/Firearm"))
         {
             var locale = Helper.Translation.LocaleEnum switch
             {
@@ -130,17 +130,17 @@ public class ModEntry : Mod
                 {
                     new ShopItemData
                     {
-                        ItemId = Framework.Gun.Ak47Id,
+                        ItemId = Framework.Firearm.Ak47Id,
                         Price = Config.Ak47Price
                     },
                     new ShopItemData
                     {
-                        ItemId = Framework.Gun.M16Id,
+                        ItemId = Framework.Firearm.M16Id,
                         Price = Config.M16Price
                     },
                     new ShopItemData
                     {
-                        ItemId = Framework.Gun.AmmoAssaultRifleId,
+                        ItemId = Framework.Firearm.AmmoAssaultRifleId,
                         Price = Config.AssaultRiflePrice
                     }
                 });

@@ -1,4 +1,4 @@
-﻿namespace Gun.Framework;
+﻿namespace Firearm.Framework;
 
 public class Config
 {

@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gun", "Gun\Gun.csproj", "{D4702ECE-14D5-4D51-BA1A-4C27B0E58CCB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firearm", "Firearm\Firearm.csproj", "{D4702ECE-14D5-4D51-BA1A-4C27B0E58CCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

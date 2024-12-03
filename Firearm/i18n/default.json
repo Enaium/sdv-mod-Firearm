@@ -1,0 +1,18 @@
+﻿{
+  "Firearm.Framework.Config.Ak47ShotSpeed.Name": "Ak47 Shot Speed",
+  "Firearm.Framework.Config.Ak47ShotSpeed.Description": "Each minute, the Ak47 can shoot how many bullets.",
+  "Firearm.Framework.Config.Ak47Price.Name": "Ak47 Price",
+  "Firearm.Framework.Config.Ak47Price.Description": "How much the Ak47 costs in Adventure Guild.",
+  "Firearm.Framework.Config.M16ShotSpeed.Name": "M16 Shot Speed",
+  "Firearm.Framework.Config.M16ShotSpeed.Description": "Each minute, the M16 can shoot how many bullets.",
+  "Firearm.Framework.Config.M16Price.Name": "M16 Price",
+  "Firearm.Framework.Config.M16Price.Description": "How much the M16 costs in Adventure Guild.",
+  "Firearm.Config.Framework.AssaultRifleDamage.Name": "Assault Rifle Damage",
+  "Firearm.Config.Framework.AssaultRifleDamage.Description": "How much damage assault rifles do.",
+  "Firearm.Weapon.Ak47.DisplayName": "AK47",
+  "Firearm.Weapon.Ak47.Description": "Can use assault rifle ammo.",
+  "Firearm.Weapon.M16.DisplayName": "M16",
+  "Firearm.Weapon.M16.Description": "Can use assault rifle ammo.",
+  "Firearm.Object.AssaultRifleAmmo.DisplayName": "Assault Rifle Ammo",
+  "Firearm.Object.AssaultRifleAmmo.Description": "Ammo for assault rifles."
+}
